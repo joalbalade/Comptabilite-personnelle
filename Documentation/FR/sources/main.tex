@@ -1,0 +1,142 @@
+\documentclass[11pt,titlepage]{article}
+
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage[top=1.5cm, bottom=1.5cm, left=cm, right=1.5cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=3cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage{eurosym}
+\usepackage{indentfirst}
+\usepackage[english,french]{babel}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\hypersetup{colorlinks,linkcolor=black,citecolor=green,filebordercolor=white,urlcolor=black}
+\usepackage{acro}
+
+\newcommand{\itemmarker}{{\small\textbullet}}
+\newcommand{\ratingmarker}{\faCircle}
+
+\numberwithin{figure}{subsubsection} % Commande de BibiFlo pour faire des trucs super géniaux qui pètent leur race dans LOF
+
+\numberwithin{table}{subsubsection}
+
+\DeclareAcronym{PLM}{short=\textsc{PLM}, long=Product Lifecycle Management}
+\DeclareAcronym{ERP}{short=\textsc{ERP}, long=Enterprise Resource Planning}
+\DeclareAcronym{EUPI}{short=\textsc{EUPI}, long=Ecole Universitaire de Physique et d'Ingénierie}
+\DeclareAcronym{ESN}{short=\textsc{ESN}, long=Entreprise de Services du Numérique}
+\DeclareAcronym{R\&D}{short=\textsc{R\&D}, long=Research \& Development}
+\DeclareAcronym{DEMS}{short=\textsc{DEMS}, long=Digital Engineering and Maufacturing Services}
+\DeclareAcronym{PO}{short=\textsc{PO}, long=Product Owner}
+\DeclareAcronym{MES}{short=\textsc{MES}, long=Manufacturing Execution System}
+\DeclareAcronym{3DX}{short=\textsc{3DX}, long=3D EXPERIENCE}
+\DeclareAcronym{BOP}{short=\textsc{BOP}, long=Bill Of Process}
+\DeclareAcronym{XML}{short=\textsc{XML}, long=Extensible Markup Language}
+\DeclareAcronym{XPDM}{short=\textsc{XPDM}, long=Export Product Data Management}
+\DeclareAcronym{IDoc}{short=\textsc{IDoc}, long=Intermediate Document}
+\DeclareAcronym{SSII}{short=\textsc{SSII}, long=Société de Service et d'Ingénierie Informatique}
+\DeclareAcronym{SIRET}{short=\textsc{SIRET}, long=Système d'Identification pour le Répertoire des Entreprises sur le Territoire}
+\DeclareAcronym{TC}{short=\textsc{TC}, long=Team Center}
+\DeclareAcronym{GBL}{short=\textsc{GBL}, long=Global Business Line}
+\DeclareAcronym{BU}{short=\textsc{BU}, long=Business Unit}
+\DeclareAcronym{MU}{short=\textsc{MU}, long=Market Unit}
+\DeclareAcronym{AS}{short=\textsc{AS}, long=Application Services}
+\DeclareAcronym{US}{short=\textsc{US}, long=User Stories}
+\DeclareAcronym{SAP}{short=\textsc{SAP}, long=Systems Applications and Products for data processing}
+\DeclareAcronym{MVC}{short=\textsc{MVC}, long=Modèle Vue Contrôleur}
+\DeclareAcronym{CAO}{short=\textsc{CAO}, long=Conception Assistée par Ordinateur}
+\DeclareAcronym{EBOM}{short=\textsc{EBOM}, long=Engineering Bill of Materials}
+\DeclareAcronym{MBOM}{short=\textsc{MBOM}, long=Manufacturing Bill Of Materials}
+\DeclareAcronym{BOR}{short=\textsc{BOR}, long=Bill Of Resources}
+\DeclareAcronym{BOM}{short=\textsc{BOM}, long=Bill Of Materials}
+\DeclareAcronym{SI}{short=\textsc{SI}, long=Systèmes d'Informations}
+\DeclareAcronym{ETL}{short=\textsc{ETL}, long=Extract Transform Load}
+\DeclareAcronym{IHM}{short=\textsc{IHM}, long=Interface Homme Machine}
+\DeclareAcronym{HTTP}{short=\textsc{HTTP}, long=Hypertext Transfer Protocol}
+\DeclareAcronym{KPI}{short=\textsc{KPI}, long=Key Performance Indicator}
+\DeclareAcronym{WT}{short=\textsc{WT}, long=Windchill}
+\DeclareAcronym{SOLID}{short=\textsc{SOLID}, long=Single responsability Open-closed Liskov substitution Interface segregation Dependency inversion}
+\DeclareAcronym{POO}{short=\textsc{POO}, long=Programmation Orientée Objet}
+\DeclareAcronym{YAML}{short=\textsc{YAML}, long=Yet Another Markup Language}
+\DeclareAcronym{TCodes}{short=\textsc{TCodes}, long=Transaction Codes}
+\DeclareAcronym{TCode}{short=\textsc{TCode}, long=Transaction Code}
+\DeclareAcronym{ABAP}{short=\textsc{ABAP}, long=Advanced Business Application Programming}
+\DeclareAcronym{JMS}{short=\textsc{JMS}, long=Java Message Service}
+\DeclareAcronym{IDE}{short=\textsc{IDE}, long=Integrated Development Environment}
+\DeclareAcronym{JSON}{short=\textsc{JSON}, long=JavaScript Object Notation}
+\DeclareAcronym{MBSE}{short=\textsc{MBSE}, long=Model Based System Engineering}
+
+
+% En-tête et pied de page
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead{}
+\fancyhead[L]{Février - Août 2023, Master 2 Automatique/Robotique - Mécatronique} %%% CHANGE AS APPROPRIATE (you may need to use a shortened form of the title)
+\fancyhead[R]{Albaladejo Joris} %%% CHANGE AS APPROPRIATE
+%%\fancyfoot{}
+%%\fancyfoot[C]{\thepage}
+\setlength{\headheight}{1.5cm}
+
+% \usepackage{biblatex} %Imports biblatex package
+
+\usepackage{biblatex}
+\addbibresource{Biblio.bib} %Import the bibliography file
+
+
+
+%_____________________________________________________________________________________________%
+
+\begin{document}
+
+%_____________________________________________________________________________________________%
+
+	\include{GENERAL/Page_De_Garde}   
+    
+	\newpage
+
+	\include{GENERAL/Resume}
+
+	\newpage
+
+        \printacronyms[name=Liste des abréviations]
+
+	\newpage
+ 
+	\tableofcontents
+
+	\newpage
+
+	\listoffigures
+        \addcontentsline{toc}{section}{Table des figures}
+ 	
+	\listoftables
+        \addcontentsline{toc}{section}{Liste des tableaux}
+
+	\newpage
+
+        \include{GENERAL/HistoriqueVersions}
+
+        \include{CORPS/Introduction}
+
+        \include{CORPS/Contexte}
+
+        \include{CORPS/ExpressionsBesoins}
+
+        \include{CORPS/PrecisionsFonctionnelles}
+
+
+
+    
+
+\end{document}
